@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MojiScrub | Clean web text, keep focus.</title>
+    <style>
+      :root {
+        --bg-color: #0f172a;
+        --card-bg: #1e293b;
+        --accent: #38bdf8;
+        --text-main: #f8fafc;
+        --text-dim: #94a3b8;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        padding: 80px 20px;
+        text-align: center;
+        max-width: 800px;
+      }
+
+      .logo-text {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+      }
+
+      .tagline {
+        font-size: 1.25rem;
+        color: var(--text-dim);
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        background-color: var(--accent);
+        color: var(--bg-color);
+        padding: 12px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition:
+          transform 0.2s,
+          opacity 0.2s;
+        display: inline-block;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        opacity: 0.9;
+      }
+
+      .preview-container {
+        margin: 40px auto;
+        background: var(--card-bg);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 900px;
+        padding: 40px 20px;
+      }
+
+      .feature-card {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 24px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .feature-card h3 {
+        margin-top: 0;
+        color: var(--accent);
+      }
+
+      footer {
+        margin-top: auto;
+        padding: 40px;
+        font-size: 0.9rem;
+        color: var(--text-dim);
+      }
+
+      footer a {
+        color: var(--text-dim);
+        text-decoration: underline;
+      }
+
+      kbd {
+        background: #334155;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-text">MojiScrub</div>
+      <p class="tagline">
+        Clean web text, keep focus. A minimalist extension to strip distracting
+        emojis from your browsing experience.
+      </p>
+      <a href="#" class="btn">Add to Chrome</a>
+    </header>
+
+    <div class="preview-container">
+      <img
+        src="screen.png"
+        alt="MojiScrub Interface"
+        style="max-width: 100%; border-radius: 4px"
+      />
+    </div>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>Refined Mode</h3>
+        <p>
+          Our intelligent filtering removes emojis without breaking the UI
+          layout or deleting essential icons.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Instant Toggle</h3>
+        <p>
+          Use <kbd>Ctrl/Cmd + Shift + M</kbd> to quickly enable or disable
+          scrubbing on the current site.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Site Specific</h3>
+        <p>
+          Choose exactly where MojiScrub works. Keep emojis on social media, but
+          scrub them on documentation and code.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 MojiScrub. <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </body>
+</html>
